@@ -2,6 +2,7 @@ package org.launchcode.techjobs.console;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -110,7 +111,27 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
+        //"we added a if statement to check the arraylist to see if amount jobs greater than zero."
+        if (someJobs.size()>0){
+            for (HashMap<String, String> job : someJobs) {
+                System.out.println(" \n*****");
 
-        System.out.println("printJobs is not implemented yet");
+                for (Map.Entry<String, String> workForce : job.entrySet()) {
+                    System.out.println(workForce.getKey() + ": " + workForce.getValue() + " ");
+
+                }
+                System.out.println("*****");
+            }
+
+        } else{
+            System.out.println("No jobs return.");
+        }
+
+
+
+
+
     }
+
+
 }
