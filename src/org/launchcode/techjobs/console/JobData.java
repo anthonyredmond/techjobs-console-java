@@ -23,7 +23,7 @@ public class JobData {
 
     /**
      * Fetch list of all values from loaded data,
-     * without duplicates, for a given column.
+     * without duplicates, for a given column.0
      *
      * @param field The column to retrieve values from
      * @return List of all of the values of the given field
